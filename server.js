@@ -20,6 +20,19 @@ app.use((req,res,next) => {
 next();
 });
 
+app.get('/project',(req,res) => {
+  res.render('project.hbs',{
+
+  pageTitle:'Project Page',
+   message:'this is a project page'
+
+ });
+})
+
+
+
+
+
 // app.use((req,res,next) => {
 //   res.render('maintain.hbs');
 // });
